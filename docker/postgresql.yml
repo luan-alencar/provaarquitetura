@@ -1,0 +1,10 @@
+version: "2"
+services:
+  account-postgres:
+    image: postgres:11.5-alpine
+    environment:
+      - POSTGRES_USER=accountservice
+      - POSTGRES_PASSWORD=accountservice
+      - POSTGRES_DB=accountservice
+    ports:
+      - 5432:5439

@@ -1,0 +1,6 @@
+version: '2'
+services:
+  account-postsgres:
+    extends:
+      file: postgresql.yml
+      service: account-postgres
