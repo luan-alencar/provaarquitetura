@@ -1,6 +1,5 @@
 package luan.example.gatewayservice.service.mapper;
 
-import luan.example.gatewayservice.domain.User;
 
 import java.util.List;
 

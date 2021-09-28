@@ -9,8 +9,6 @@ import java.io.Serializable;
 
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
 public class User implements Serializable {
 
     private static final long serialVersionUID = 441108583833005921L;
