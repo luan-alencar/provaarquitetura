@@ -3,8 +3,8 @@ services:
   account-postgres:
     image: postgres:11.5-alpine
     environment:
-      - POSTGRES_USER=accountservice
-      - POSTGRES_PASSWORD=accountservice
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=accountservice
     ports:
-      - 5432:5439
+      - 5439:5432
