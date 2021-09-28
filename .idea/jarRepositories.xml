@@ -4,6 +4,11 @@
     <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
       <option name="url" value="http://element.basis.com.br/repository/public" />
     </remote-repository>
     <remote-repository>
@@ -15,6 +20,11 @@
       <option name="id" value="snapshots" />
       <option name="name" value="snapshots" />
       <option name="url" value="http://element.basis.com.br/repository/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="spring-milestones" />
+      <option name="name" value="Spring Milestones" />
+      <option name="url" value="https://repo.spring.io/milestone" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />

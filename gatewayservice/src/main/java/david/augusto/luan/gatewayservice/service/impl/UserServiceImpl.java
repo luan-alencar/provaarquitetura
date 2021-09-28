@@ -2,7 +2,7 @@ package david.augusto.luan.gatewayservice.service.impl;
 
 import david.augusto.luan.gatewayservice.domain.User;
 import david.augusto.luan.gatewayservice.repository.UserRepository;
-import david.augusto.luan.gatewayservice.service.ServiceEntityGeneric;
+import david.augusto.luan.gatewayservice.service.UserService;
 import david.augusto.luan.gatewayservice.service.dto.UserDTO;
 import david.augusto.luan.gatewayservice.service.mapper.UserMapper;
 import lombok.RequiredArgsConstructor;
@@ -12,7 +12,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class UserServiceImpl implements ServiceEntityGeneric<User, UserDTO> {
+public class UserServiceImpl implements UserService {
 
     private final UserMapper mapper;
     private final UserRepository repository;
@@ -24,7 +24,7 @@ public class UserServiceImpl implements ServiceEntityGeneric<User, UserDTO> {
 
     @Override
     public UserDTO getByID(Long id) {
-        return mapper.toDTO(repository.getOne(id));
+        return mapper.toDTO(repository.findById(id).orElseThrow(() -> new RuntimeException()));
     }
 
     @Override

@@ -11,7 +11,7 @@
         <module name="accountservice" />
         <module name="springcloudconfig" />
       </profile>
-      <profile name="Annotation profile for gatewayservice" enabled="true">
+      <profile name="Annotation profile for security-gateway-demo" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -38,6 +38,7 @@
       <module name="discoveryservice" target="1.8" />
       <module name="gatewayservice" target="1.8" />
       <module name="inventoryservice" target="1.8" />
+      <module name="provaarquitetura" target="1.5" />
       <module name="springcloudconfig" target="1.8" />
     </bytecodeTargetLevel>
   </component>
