@@ -1,0 +1,25 @@
+hystrix.command.fallbackcmd.execution.isolation.thread.timeoutInMilliseconds: 2000
+spring:
+  application:
+    name: api-gateway
+  datasource:
+    username: root
+    data-password:
+    url: jdbc:postgresql://localhost:5432/postgres
+
+server:
+  port: 8088
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+    register-with-eureka: false
+  instance:
+    preferIpAddress: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream

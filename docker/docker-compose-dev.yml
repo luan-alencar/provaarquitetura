@@ -1,6 +1,6 @@
 version: '2'
 services:
-  account-postsgres:
+  microservice-postsgres:
     extends:
       file: postgresql.yml
-      service: account-postgres
+      service: microservice-postgres
