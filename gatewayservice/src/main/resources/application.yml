@@ -1,18 +1,22 @@
-hystrix.command.fallbackcmd.execution.isolation.thread.timeoutInMilliseconds: 2000
-spring:
-  application:
-    name: api-gateway
-
 server:
   port: 8088
+
+spring:
+  application:
+    name: gatewayservice
+  cloud:
+    gateway:
+      routes:
+        - id: accountmodule, inventorymodule
+          uri: lb://account-service, lb://inventory-service
+          predicates:
+            - Path=/accounts/**
+            - Path=/inventories/**
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
-    register-with-eureka: false
-  instance:
-    preferIpAddress: true
+      defaultZone: http://localhost:8088/eureka
 
 management:
   endpoints:
