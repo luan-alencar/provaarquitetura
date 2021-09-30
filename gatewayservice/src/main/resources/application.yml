@@ -2,10 +2,6 @@ hystrix.command.fallbackcmd.execution.isolation.thread.timeoutInMilliseconds: 20
 spring:
   application:
     name: api-gateway
-  datasource:
-    username: root
-    data-password:
-    url: jdbc:postgresql://localhost:5432/postgres
 
 server:
   port: 8088
