@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: dev
+
+  application:
+    name: account-service
+
+server:
+  port: 8081
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8083/eureka
